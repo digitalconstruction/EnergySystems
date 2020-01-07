@@ -1,0 +1,904 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyUse"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/saref#Currency"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#isMeasuredIn"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasValue"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMax"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMin"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSTD"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSkewness"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLifeCycleParameters"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasCost"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Energy"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyStatistics"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerStatistics"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Reward"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasReward"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#refersTo"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEndTime"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMax"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasStartTime"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMin"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLCC"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref#hasName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEmissions"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This is the BIM4EEB Ontology for energy services. An extension of SAREF to address LCA parameters for the energy systems to be considered in a renovation project"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "This ontology is distributed under Apache License Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0)"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "SUITE5"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "BIM4EEB Energy Systems Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://saref.etsi.org/saref"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ActuatorLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Independent from the ActuatorSwitch class, the ActuatorLevel class enables a user or application to model LEVEL commands (start, up, percentageAbsolute, relative, etc.). This can be used to dim a light, set the speed of an electric motor, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Actuator Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Actuator"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Along wiht the actual profile, the baseline profile of each device should be defined for the participation in energy services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Baseline Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Profile"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Batteries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Residential, behind the meter battery system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Battery Storage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Storage"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#CHP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Small CHPs for local generation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Combined Heat  & Power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Generator"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Capital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The capital cost required for the investment on Energy Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Capital Cost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ComfortManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An automation service offered to the users on the way to ensure comfort preservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Comfort Preservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Service"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsInstallation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Installation of the energy system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Construction"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsTransport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport of Energy System to the destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Construction"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Construction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Construction phase of renovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Deconstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The deconstruction of Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Deconstruction process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#DieselGen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Small Diesel Generator for back up"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diesel Generator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Generator"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Disposal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The disposal  of Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Disposal Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Charging points and the associated EVs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Electric Vehicles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Storage"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "End of life period for the Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "End of Life"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Energy Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Engineering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Engineering and operation cost for the device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Engineering Cost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Flexibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Energy System Flexibility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flexibility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Property"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#HVAC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Heating Cooling and Ventilation systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HVAC Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Load"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device Lifecycle class to represent the different properties that have to be considered in the model for the project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device Lifecycle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Lifecycle Cost Parameters for the Energy Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lifecycle Cost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Maintenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Maintenance Costs for the Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Maintenance Cost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Manufacturing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Manufacturing stage for the Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ProductStage"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#MaterialSupply",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Material Supply for the early stage of r the Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ProductStage"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actual Operation of the energy system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The operational costs for the Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Operational Costs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#PV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Small scale Photovoltaics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rooftop PVs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Generator"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Power Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ProductStage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Production phase for the Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Production",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Repair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "LCA analysis during the repair phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Replacement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "LCA analysis during the replacement  phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Reward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This is the reward from participating in innovative Energy Services (like DR)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Property"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#SelfConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This is the service about self consumption optimization.. Balancing local generation with demand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Self Consumption Optimization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Service"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ServiceAggregator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This is the load control from 3rd party aggregators to enable participation in DR markets (services to DSOs, anchillary services etc...)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Service to Aggregator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Service"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Generic energy and power statistics that characterize the daily curve of each eneryg related device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Energy Statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport of Energy Systems Disposals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Operational Phase of the Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#UseMaintenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "LCA analysis during the maintenance period"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#WasteProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Special process required for the management of disposals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Wind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wind Turbines (small scale)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wind Turbine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref#Generator"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the device/ energy system is associated with an operational cost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Cost"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The total duration of the process"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEmissions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The amount of Emissions in LCA analysis"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEndTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The end  time of a process|"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The max value for the energy (daily) profile of an energy system"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The min value for the energy (daily) profile of an energy system"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyStatistics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An energy system has some typical energy statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Energy Statistics"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLCC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relationship between LCA and LCC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Lifecycle Cost"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLifeCycleParameters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relationship of a device and its LCA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Lifecycle Parameters"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The max value for the power profile of an energy system"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The min value for the power profile of an energy system"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSTD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Power Standard deviation of a device"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSkewness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Power Skewness of a device power profile"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerStatistics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The eneryg system has some power statistics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Power Statistics"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasReward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A service of the energy system is associated with a reward for this service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Reward"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasStartTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The start time of a process|"
+  } ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#refersTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A service of an energy system has as a reference an baseline profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "refers To"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#Device",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#EnergyRelated",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#Service",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid26"
+  }, {
+    "@id" : "_:genid27"
+  }, {
+    "@id" : "_:genid28"
+  }, {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  } ]
+} ]
