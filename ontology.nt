@@ -1,9 +1,31 @@
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl> <http://www.w3.org/2002/07/owl#imports> <https://saref.etsi.org/saref> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl> <http://purl.org/dc/terms/description> "This is the BIM4EEB Ontology for energy services. An extension of SAREF to address LCA parameters for the energy systems to be considered in a renovation project" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl> <http://purl.org/dc/terms/license> "This ontology is distributed under Apache License Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0)" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl> <http://purl.org/dc/terms/publisher> "SUITE5" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl> <http://purl.org/dc/terms/title> "BIM4EEB Energy Systems Ontology" .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2002/07/owl#imports> <https://saref.etsi.org/saref> .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/elements/1.1/creator> "Kostas Tsatsakis (kostas@suite5.eu)" .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/elements/1.1/creator> "Spiros Kousouris (spiros@suite5.eu)" .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/terms/abstract> "An ontology for energy services, defined as an extension of SAREF to address lifecycle assessment parameters for the energy systems." .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/terms/description> "An ontology for energy services, defined as an extension of SAREF to address lifecycle assessment (LCA) parameters for the energy systems, especially needed in renovation projects." .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/terms/title> "Digital Construction - EnergySystems" .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dicba" .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/EnergySystems" .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2000/01/rdf-schema#comment> "The IAQ ontology was created by SUITE5 in the BIM4EEB project (GA 820660), supported through the EU Horizon 2020 Research and Innovation Programme under the topic Building information modelling adapted to efficient renovation (RIA). " .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction - EnergySystems" .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -13,40 +35,40 @@
 # #################################################################
 # 
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasCost
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasCost> <http://www.w3.org/2000/01/rdf-schema#comment> "the device/ energy system is associated with an operational cost" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasCost> <http://www.w3.org/2000/01/rdf-schema#label> "has Cost" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasCost
+<https://w3id.org/digitalconstruction/EnergySystems#hasCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasCost> <http://www.w3.org/2000/01/rdf-schema#comment> "the device/ energy system is associated with an operational cost" .
+<https://w3id.org/digitalconstruction/EnergySystems#hasCost> <http://www.w3.org/2000/01/rdf-schema#label> "has Cost" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyStatistics
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "An energy system has some typical energy statistics" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "has Energy Statistics" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics
+<https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "An energy system has some typical energy statistics" .
+<https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "has Energy Statistics" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLCC
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLCC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLCC> <http://www.w3.org/2000/01/rdf-schema#comment> "relationship between LCA and LCC" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLCC> <http://www.w3.org/2000/01/rdf-schema#label> "has Lifecycle Cost" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasLCC
+<https://w3id.org/digitalconstruction/EnergySystems#hasLCC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasLCC> <http://www.w3.org/2000/01/rdf-schema#comment> "relationship between LCA and LCC" .
+<https://w3id.org/digitalconstruction/EnergySystems#hasLCC> <http://www.w3.org/2000/01/rdf-schema#label> "has Lifecycle Cost" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLifeCycleParameters
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLifeCycleParameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLifeCycleParameters> <http://www.w3.org/2000/01/rdf-schema#comment> "relationship of a device and its LCA" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLifeCycleParameters> <http://www.w3.org/2000/01/rdf-schema#label> "has Lifecycle Parameters" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasLifeCycleParameters
+<https://w3id.org/digitalconstruction/EnergySystems#hasLifeCycleParameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasLifeCycleParameters> <http://www.w3.org/2000/01/rdf-schema#comment> "relationship of a device and its LCA" .
+<https://w3id.org/digitalconstruction/EnergySystems#hasLifeCycleParameters> <http://www.w3.org/2000/01/rdf-schema#label> "has Lifecycle Parameters" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerStatistics
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "The eneryg system has some power statistics" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "has Power Statistics" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "The eneryg system has some power statistics" .
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "has Power Statistics" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasReward
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasReward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasReward> <http://www.w3.org/2000/01/rdf-schema#comment> "A service of the energy system is associated with a reward for this service" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasReward> <http://www.w3.org/2000/01/rdf-schema#label> "has Reward" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasReward
+<https://w3id.org/digitalconstruction/EnergySystems#hasReward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasReward> <http://www.w3.org/2000/01/rdf-schema#comment> "A service of the energy system is associated with a reward for this service" .
+<https://w3id.org/digitalconstruction/EnergySystems#hasReward> <http://www.w3.org/2000/01/rdf-schema#label> "has Reward" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#refersTo
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#refersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#refersTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A service of an energy system has as a reference an baseline profile" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#refersTo> <http://www.w3.org/2000/01/rdf-schema#label> "refers To" .
+# https://w3id.org/digitalconstruction/EnergySystems#refersTo
+<https://w3id.org/digitalconstruction/EnergySystems#refersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#refersTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A service of an energy system has as a reference an baseline profile" .
+<https://w3id.org/digitalconstruction/EnergySystems#refersTo> <http://www.w3.org/2000/01/rdf-schema#label> "refers To" .
 # 
 # 
 # 
@@ -57,51 +79,51 @@
 # #################################################################
 # 
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasDuration
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "The total duration of the process" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasDuration
+<https://w3id.org/digitalconstruction/EnergySystems#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "The total duration of the process" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEmissions
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEmissions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEmissions> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of Emissions in LCA analysis" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasEmissions
+<https://w3id.org/digitalconstruction/EnergySystems#hasEmissions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasEmissions> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of Emissions in LCA analysis" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEndTime
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEndTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEndTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The end  time of a process|" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasEndTime
+<https://w3id.org/digitalconstruction/EnergySystems#hasEndTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasEndTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The end  time of a process|" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMax
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMax> <http://www.w3.org/2000/01/rdf-schema#comment> "The max value for the energy (daily) profile of an energy system" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMax
+<https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMax> <http://www.w3.org/2000/01/rdf-schema#comment> "The max value for the energy (daily) profile of an energy system" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMin
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMin> <http://www.w3.org/2000/01/rdf-schema#comment> "The min value for the energy (daily) profile of an energy system" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMin
+<https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMin> <http://www.w3.org/2000/01/rdf-schema#comment> "The min value for the energy (daily) profile of an energy system" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyUse
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# https://w3id.org/digitalconstruction/EnergySystems#hasEnergyUse
+<https://w3id.org/digitalconstruction/EnergySystems#hasEnergyUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMax
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMax> <http://www.w3.org/2000/01/rdf-schema#comment> "The max value for the power profile of an energy system" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasPowerMax
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerMax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerMax> <http://www.w3.org/2000/01/rdf-schema#comment> "The max value for the power profile of an energy system" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMin
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMin> <http://www.w3.org/2000/01/rdf-schema#comment> "The min value for the power profile of an energy system" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasPowerMin
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerMin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerMin> <http://www.w3.org/2000/01/rdf-schema#comment> "The min value for the power profile of an energy system" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSTD
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSTD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSTD> <http://www.w3.org/2000/01/rdf-schema#comment> "Power Standard deviation of a device" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasPowerSTD
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerSTD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerSTD> <http://www.w3.org/2000/01/rdf-schema#comment> "Power Standard deviation of a device" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSkewness
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSkewness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSkewness> <http://www.w3.org/2000/01/rdf-schema#comment> "Power Skewness of a device power profile" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasPowerSkewness
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerSkewness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasPowerSkewness> <http://www.w3.org/2000/01/rdf-schema#comment> "Power Skewness of a device power profile" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasStartTime
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasStartTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasStartTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The start time of a process|" .
+# https://w3id.org/digitalconstruction/EnergySystems#hasStartTime
+<https://w3id.org/digitalconstruction/EnergySystems#hasStartTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasStartTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The start time of a process|" .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasValue
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# https://w3id.org/digitalconstruction/EnergySystems#hasValue
+<https://w3id.org/digitalconstruction/EnergySystems#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # 
 # 
@@ -112,343 +134,343 @@
 # #################################################################
 # 
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ActuatorLevel
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ActuatorLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ActuatorLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Actuator> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ActuatorLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Independent from the ActuatorSwitch class, the ActuatorLevel class enables a user or application to model LEVEL commands (start, up, percentageAbsolute, relative, etc.). This can be used to dim a light, set the speed of an electric motor, etc." .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ActuatorLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator Level" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Profile> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+# https://saref.etsi.org/saref#Device
+<https://saref.etsi.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasLifeCycleParameters> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> .
+<https://saref.etsi.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasName> .
-_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Along wiht the actual profile, the baseline profile of each device should be defined for the participation in energy services" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Baseline Profile" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Batteries
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Batteries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Batteries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Storage> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Batteries> <http://www.w3.org/2000/01/rdf-schema#comment> "Residential, behind the meter battery system" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Batteries> <http://www.w3.org/2000/01/rdf-schema#label> "Battery Storage" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#CHP
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#CHP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#CHP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Generator> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#CHP> <http://www.w3.org/2000/01/rdf-schema#comment> "Small CHPs for local generation" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#CHP> <http://www.w3.org/2000/01/rdf-schema#label> "Combined Heat  & Power" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Capital
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Capital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Capital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Capital> <http://www.w3.org/2000/01/rdf-schema#comment> "The capital cost required for the investment on Energy Systems" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Capital> <http://www.w3.org/2000/01/rdf-schema#label> "Capital Cost" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ComfortManagement
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ComfortManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ComfortManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Service> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ComfortManagement> <http://www.w3.org/2000/01/rdf-schema#comment> "An automation service offered to the users on the way to ensure comfort preservation" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ComfortManagement> <http://www.w3.org/2000/01/rdf-schema#label> "Comfort Preservation" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsInstallation
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsInstallation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsInstallation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Construction> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsInstallation> <http://www.w3.org/2000/01/rdf-schema#comment> "Installation of the energy system" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsTransport
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Construction> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ConsTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport of Energy System to the destination" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Construction
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Construction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Construction> <http://www.w3.org/2000/01/rdf-schema#comment> "Construction phase of renovation" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Deconstruction
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Deconstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Deconstruction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Deconstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "The deconstruction of Energy System" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Deconstruction> <http://www.w3.org/2000/01/rdf-schema#label> "Deconstruction process" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#DieselGen
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#DieselGen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#DieselGen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Generator> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#DieselGen> <http://www.w3.org/2000/01/rdf-schema#comment> "Small Diesel Generator for back up" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#DieselGen> <http://www.w3.org/2000/01/rdf-schema#label> "Diesel Generator" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Disposal
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Disposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Disposal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife> .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EV
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Storage> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EV> <http://www.w3.org/2000/01/rdf-schema#comment> "Charging points and the associated EVs" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EV> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Vehicles" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife> <http://www.w3.org/2000/01/rdf-schema#comment> "End of life period for the Energy System" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife> <http://www.w3.org/2000/01/rdf-schema#label> "End of Life" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Energy
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Energy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Energy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasCost> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> .
+<https://saref.etsi.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMax> .
-_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Energy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://saref.etsi.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyMin> .
-_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Statistics" .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasName> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Engineering
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Engineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Engineering> <http://www.w3.org/2000/01/rdf-schema#comment> "Engineering and operation cost for the device" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Engineering> <http://www.w3.org/2000/01/rdf-schema#label> "Engineering Cost" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Flexibility
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Flexibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Flexibility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Property> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Flexibility> <http://www.w3.org/2000/01/rdf-schema#comment> "Energy System Flexibility" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Flexibility> <http://www.w3.org/2000/01/rdf-schema#label> "Flexibility" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#HVAC
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#HVAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Load> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#HVAC> <http://www.w3.org/2000/01/rdf-schema#comment> "Heating Cooling and Ventilation systems" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#HVAC> <http://www.w3.org/2000/01/rdf-schema#label> "HVAC Systems" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+# https://saref.etsi.org/saref#EnergyRelated
+<https://saref.etsi.org/saref#EnergyRelated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLCC> .
-_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/digitalconstruction/EnergySystems#Energy> .
+<https://saref.etsi.org/saref#EnergyRelated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasName> .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasDuration> .
-_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEmissions> .
-_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyUse> .
-_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#comment> "Device Lifecycle class to represent the different properties that have to be considered in the model for the project" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#label> "Device Lifecycle" .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/digitalconstruction/EnergySystems#Power> .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+# https://saref.etsi.org/saref#Service
+<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasReward> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/digitalconstruction/EnergySystems#Reward> .
+<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#refersTo> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile> .
+<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasEndTime> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#isMeasuredIn> .
-_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/saref#Currency> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasStartTime> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel
+<https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Actuator> .
+<https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Independent from the ActuatorSwitch class, the ActuatorLevel class enables a user or application to model LEVEL commands (start, up, percentageAbsolute, relative, etc.). This can be used to dim a light, set the speed of an electric motor, etc." .
+<https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator Level" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile
+<https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Profile> .
+<https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
 _:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+<https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasName> .
 _:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+<https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Along wiht the actual profile, the baseline profile of each device should be defined for the participation in energy services" .
+<https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Baseline Profile" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Batteries
+<https://w3id.org/digitalconstruction/EnergySystems#Batteries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Batteries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Storage> .
+<https://w3id.org/digitalconstruction/EnergySystems#Batteries> <http://www.w3.org/2000/01/rdf-schema#comment> "Residential, behind the meter battery system" .
+<https://w3id.org/digitalconstruction/EnergySystems#Batteries> <http://www.w3.org/2000/01/rdf-schema#label> "Battery Storage" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#CHP
+<https://w3id.org/digitalconstruction/EnergySystems#CHP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#CHP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Generator> .
+<https://w3id.org/digitalconstruction/EnergySystems#CHP> <http://www.w3.org/2000/01/rdf-schema#comment> "Small CHPs for local generation" .
+<https://w3id.org/digitalconstruction/EnergySystems#CHP> <http://www.w3.org/2000/01/rdf-schema#label> "Combined Heat  & Power" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Capital
+<https://w3id.org/digitalconstruction/EnergySystems#Capital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Capital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> .
+<https://w3id.org/digitalconstruction/EnergySystems#Capital> <http://www.w3.org/2000/01/rdf-schema#comment> "The capital cost required for the investment on Energy Systems" .
+<https://w3id.org/digitalconstruction/EnergySystems#Capital> <http://www.w3.org/2000/01/rdf-schema#label> "Capital Cost" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#ComfortManagement
+<https://w3id.org/digitalconstruction/EnergySystems#ComfortManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#ComfortManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Service> .
+<https://w3id.org/digitalconstruction/EnergySystems#ComfortManagement> <http://www.w3.org/2000/01/rdf-schema#comment> "An automation service offered to the users on the way to ensure comfort preservation" .
+<https://w3id.org/digitalconstruction/EnergySystems#ComfortManagement> <http://www.w3.org/2000/01/rdf-schema#label> "Comfort Preservation" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#ConsInstallation
+<https://w3id.org/digitalconstruction/EnergySystems#ConsInstallation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#ConsInstallation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Construction> .
+<https://w3id.org/digitalconstruction/EnergySystems#ConsInstallation> <http://www.w3.org/2000/01/rdf-schema#comment> "Installation of the energy system" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#ConsTransport
+<https://w3id.org/digitalconstruction/EnergySystems#ConsTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#ConsTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Construction> .
+<https://w3id.org/digitalconstruction/EnergySystems#ConsTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport of Energy System to the destination" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Construction
+<https://w3id.org/digitalconstruction/EnergySystems#Construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Construction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> .
+<https://w3id.org/digitalconstruction/EnergySystems#Construction> <http://www.w3.org/2000/01/rdf-schema#comment> "Construction phase of renovation" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Deconstruction
+<https://w3id.org/digitalconstruction/EnergySystems#Deconstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Deconstruction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#EndofLife> .
+<https://w3id.org/digitalconstruction/EnergySystems#Deconstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "The deconstruction of Energy System" .
+<https://w3id.org/digitalconstruction/EnergySystems#Deconstruction> <http://www.w3.org/2000/01/rdf-schema#label> "Deconstruction process" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#DieselGen
+<https://w3id.org/digitalconstruction/EnergySystems#DieselGen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#DieselGen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Generator> .
+<https://w3id.org/digitalconstruction/EnergySystems#DieselGen> <http://www.w3.org/2000/01/rdf-schema#comment> "Small Diesel Generator for back up" .
+<https://w3id.org/digitalconstruction/EnergySystems#DieselGen> <http://www.w3.org/2000/01/rdf-schema#label> "Diesel Generator" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Disposal
+<https://w3id.org/digitalconstruction/EnergySystems#Disposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Disposal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#EndofLife> .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#EV
+<https://w3id.org/digitalconstruction/EnergySystems#EV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#EV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Storage> .
+<https://w3id.org/digitalconstruction/EnergySystems#EV> <http://www.w3.org/2000/01/rdf-schema#comment> "Charging points and the associated EVs" .
+<https://w3id.org/digitalconstruction/EnergySystems#EV> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Vehicles" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#EndofLife
+<https://w3id.org/digitalconstruction/EnergySystems#EndofLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#EndofLife> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> .
+<https://w3id.org/digitalconstruction/EnergySystems#EndofLife> <http://www.w3.org/2000/01/rdf-schema#comment> "End of life period for the Energy System" .
+<https://w3id.org/digitalconstruction/EnergySystems#EndofLife> <http://www.w3.org/2000/01/rdf-schema#label> "End of Life" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Energy
+<https://w3id.org/digitalconstruction/EnergySystems#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Energy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Statistics> .
+<https://w3id.org/digitalconstruction/EnergySystems#Energy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasValue> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMax> .
 _:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#comment> "Lifecycle Cost Parameters for the Energy Systems" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#label> "Lifecycle Cost" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Maintenance
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Maintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Maintenance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Maintenance> <http://www.w3.org/2000/01/rdf-schema#comment> "Maintenance Costs for the Energy System" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Maintenance> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Cost" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Manufacturing
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Manufacturing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Manufacturing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ProductStage> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Manufacturing> <http://www.w3.org/2000/01/rdf-schema#comment> "Manufacturing stage for the Energy System" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#MaterialSupply
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#MaterialSupply> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#MaterialSupply> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ProductStage> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#MaterialSupply> <http://www.w3.org/2000/01/rdf-schema#comment> "Material Supply for the early stage of r the Energy System" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operation
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operation> <http://www.w3.org/2000/01/rdf-schema#comment> "Actual Operation of the energy system" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational> <http://www.w3.org/2000/01/rdf-schema#comment> "The operational costs for the Energy System" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Operational> <http://www.w3.org/2000/01/rdf-schema#label> "Operational Costs" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#PV
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#PV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#PV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Generator> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#PV> <http://www.w3.org/2000/01/rdf-schema#comment> "Small scale Photovoltaics" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#PV> <http://www.w3.org/2000/01/rdf-schema#label> "Rooftop PVs" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+<https://w3id.org/digitalconstruction/EnergySystems#Energy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMax> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMin> .
 _:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+<https://w3id.org/digitalconstruction/EnergySystems#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Statistics" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Engineering
+<https://w3id.org/digitalconstruction/EnergySystems#Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Engineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Operational> .
+<https://w3id.org/digitalconstruction/EnergySystems#Engineering> <http://www.w3.org/2000/01/rdf-schema#comment> "Engineering and operation cost for the device" .
+<https://w3id.org/digitalconstruction/EnergySystems#Engineering> <http://www.w3.org/2000/01/rdf-schema#label> "Engineering Cost" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Flexibility
+<https://w3id.org/digitalconstruction/EnergySystems#Flexibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Flexibility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Property> .
+<https://w3id.org/digitalconstruction/EnergySystems#Flexibility> <http://www.w3.org/2000/01/rdf-schema#comment> "Energy System Flexibility" .
+<https://w3id.org/digitalconstruction/EnergySystems#Flexibility> <http://www.w3.org/2000/01/rdf-schema#label> "Flexibility" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#HVAC
+<https://w3id.org/digitalconstruction/EnergySystems#HVAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Load> .
+<https://w3id.org/digitalconstruction/EnergySystems#HVAC> <http://www.w3.org/2000/01/rdf-schema#comment> "Heating Cooling and Ventilation systems" .
+<https://w3id.org/digitalconstruction/EnergySystems#HVAC> <http://www.w3.org/2000/01/rdf-schema#label> "HVAC Systems" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerMin> .
-_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasLCC> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSTD> .
-_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerSkewness> .
-_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power> <http://www.w3.org/2000/01/rdf-schema#label> "Power Statistics" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ProductStage
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ProductStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ProductStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ProductStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Production phase for the Energy System" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Repair
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Repair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Repair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Repair> <http://www.w3.org/2000/01/rdf-schema#comment> "LCA analysis during the repair phase" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Replacement
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Replacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Replacement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Replacement> <http://www.w3.org/2000/01/rdf-schema#comment> "LCA analysis during the replacement  phase" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Reward
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Reward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Reward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Property> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Reward> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the reward from participating in innovative Energy Services (like DR)" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#SelfConsumption
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#SelfConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#SelfConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Service> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#SelfConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the service about self consumption optimization.. Balancing local generation with demand" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#SelfConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Self Consumption Optimization" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ServiceAggregator
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ServiceAggregator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ServiceAggregator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Service> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ServiceAggregator> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the load control from 3rd party aggregators to enable participation in DR markets (services to DSOs, anchillary services etc...)" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#ServiceAggregator> <http://www.w3.org/2000/01/rdf-schema#label> "Service to Aggregator" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasName> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
-_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic energy and power statistics that characterize the daily curve of each eneryg related device" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Statistics> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Statistics" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Transport
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife> .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use> <http://www.w3.org/2000/01/rdf-schema#comment> "Operational Phase of the Energy System" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#UseMaintenance
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#UseMaintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#UseMaintenance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Use> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#UseMaintenance> <http://www.w3.org/2000/01/rdf-schema#comment> "LCA analysis during the maintenance period" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#WasteProcess
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#WasteProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#WasteProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#EndofLife> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#WasteProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Special process required for the management of disposals" .
-# 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Wind
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Wind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Wind> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Generator> .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Wind> <http://www.w3.org/2000/01/rdf-schema#comment> "Wind Turbines (small scale)" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Wind> <http://www.w3.org/2000/01/rdf-schema#label> "Wind Turbine" .
-# 
-# https://saref.etsi.org/saref#Device
-<https://saref.etsi.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasDuration> .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasLifeCycleParameters> .
-_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleAssesment> .
-<https://saref.etsi.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasEmissions> .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasCost> .
-_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#LifeCycleCost> .
-<https://saref.etsi.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasEnergyUse> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#comment> "Device Lifecycle class to represent the different properties that have to be considered in the model for the project" .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/2000/01/rdf-schema#label> "Device Lifecycle" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
-_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://saref.etsi.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#isMeasuredIn> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/saref#Currency> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasName> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
 _:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-# 
-# https://saref.etsi.org/saref#EnergyRelated
-<https://saref.etsi.org/saref#EnergyRelated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEnergyStatistics> .
-_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Energy> .
-<https://saref.etsi.org/saref#EnergyRelated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasName> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasPowerStatistics> .
-_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Power> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasValue> .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#comment> "Lifecycle Cost Parameters for the Energy Systems" .
+<https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> <http://www.w3.org/2000/01/rdf-schema#label> "Lifecycle Cost" .
 # 
-# https://saref.etsi.org/saref#Service
-<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+# https://w3id.org/digitalconstruction/EnergySystems#Maintenance
+<https://w3id.org/digitalconstruction/EnergySystems#Maintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Maintenance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Operational> .
+<https://w3id.org/digitalconstruction/EnergySystems#Maintenance> <http://www.w3.org/2000/01/rdf-schema#comment> "Maintenance Costs for the Energy System" .
+<https://w3id.org/digitalconstruction/EnergySystems#Maintenance> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Cost" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Manufacturing
+<https://w3id.org/digitalconstruction/EnergySystems#Manufacturing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Manufacturing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#ProductStage> .
+<https://w3id.org/digitalconstruction/EnergySystems#Manufacturing> <http://www.w3.org/2000/01/rdf-schema#comment> "Manufacturing stage for the Energy System" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#MaterialSupply
+<https://w3id.org/digitalconstruction/EnergySystems#MaterialSupply> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#MaterialSupply> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#ProductStage> .
+<https://w3id.org/digitalconstruction/EnergySystems#MaterialSupply> <http://www.w3.org/2000/01/rdf-schema#comment> "Material Supply for the early stage of r the Energy System" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Operation
+<https://w3id.org/digitalconstruction/EnergySystems#Operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Operation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Use> .
+<https://w3id.org/digitalconstruction/EnergySystems#Operation> <http://www.w3.org/2000/01/rdf-schema#comment> "Actual Operation of the energy system" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Operational
+<https://w3id.org/digitalconstruction/EnergySystems#Operational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Operational> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost> .
+<https://w3id.org/digitalconstruction/EnergySystems#Operational> <http://www.w3.org/2000/01/rdf-schema#comment> "The operational costs for the Energy System" .
+<https://w3id.org/digitalconstruction/EnergySystems#Operational> <http://www.w3.org/2000/01/rdf-schema#label> "Operational Costs" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#PV
+<https://w3id.org/digitalconstruction/EnergySystems#PV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#PV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Generator> .
+<https://w3id.org/digitalconstruction/EnergySystems#PV> <http://www.w3.org/2000/01/rdf-schema#comment> "Small scale Photovoltaics" .
+<https://w3id.org/digitalconstruction/EnergySystems#PV> <http://www.w3.org/2000/01/rdf-schema#label> "Rooftop PVs" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Power
+<https://w3id.org/digitalconstruction/EnergySystems#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Statistics> .
+<https://w3id.org/digitalconstruction/EnergySystems#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasReward> .
-_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Reward> .
-<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasPowerMax> .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/digitalconstruction/EnergySystems#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#refersTo> .
-_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#BaselineProfile> .
-<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasPowerMin> .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/digitalconstruction/EnergySystems#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
-_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasPowerSTD> .
+_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/digitalconstruction/EnergySystems#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasEndTime> .
-_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasPowerSkewness> .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/digitalconstruction/EnergySystems#Power> <http://www.w3.org/2000/01/rdf-schema#label> "Power Statistics" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#ProductStage
+<https://w3id.org/digitalconstruction/EnergySystems#ProductStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#ProductStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> .
+<https://w3id.org/digitalconstruction/EnergySystems#ProductStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Production phase for the Energy System" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Repair
+<https://w3id.org/digitalconstruction/EnergySystems#Repair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Repair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Use> .
+<https://w3id.org/digitalconstruction/EnergySystems#Repair> <http://www.w3.org/2000/01/rdf-schema#comment> "LCA analysis during the repair phase" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Replacement
+<https://w3id.org/digitalconstruction/EnergySystems#Replacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Replacement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Use> .
+<https://w3id.org/digitalconstruction/EnergySystems#Replacement> <http://www.w3.org/2000/01/rdf-schema#comment> "LCA analysis during the replacement  phase" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Reward
+<https://w3id.org/digitalconstruction/EnergySystems#Reward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Reward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Property> .
+<https://w3id.org/digitalconstruction/EnergySystems#Reward> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the reward from participating in innovative Energy Services (like DR)" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#SelfConsumption
+<https://w3id.org/digitalconstruction/EnergySystems#SelfConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#SelfConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Service> .
+<https://w3id.org/digitalconstruction/EnergySystems#SelfConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the service about self consumption optimization.. Balancing local generation with demand" .
+<https://w3id.org/digitalconstruction/EnergySystems#SelfConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Self Consumption Optimization" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#ServiceAggregator
+<https://w3id.org/digitalconstruction/EnergySystems#ServiceAggregator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#ServiceAggregator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Service> .
+<https://w3id.org/digitalconstruction/EnergySystems#ServiceAggregator> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the load control from 3rd party aggregators to enable participation in DR markets (services to DSOs, anchillary services etc...)" .
+<https://w3id.org/digitalconstruction/EnergySystems#ServiceAggregator> <http://www.w3.org/2000/01/rdf-schema#label> "Service to Aggregator" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Statistics
+<https://w3id.org/digitalconstruction/EnergySystems#Statistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#hasStartTime> .
-_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref#hasDescription> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/digitalconstruction/EnergySystems#Statistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic energy and power statistics that characterize the daily curve of each eneryg related device" .
+<https://w3id.org/digitalconstruction/EnergySystems#Statistics> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Statistics" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Transport
+<https://w3id.org/digitalconstruction/EnergySystems#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#EndofLife> .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Use
+<https://w3id.org/digitalconstruction/EnergySystems#Use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Use> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> .
+<https://w3id.org/digitalconstruction/EnergySystems#Use> <http://www.w3.org/2000/01/rdf-schema#comment> "Operational Phase of the Energy System" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#UseMaintenance
+<https://w3id.org/digitalconstruction/EnergySystems#UseMaintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#UseMaintenance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Use> .
+<https://w3id.org/digitalconstruction/EnergySystems#UseMaintenance> <http://www.w3.org/2000/01/rdf-schema#comment> "LCA analysis during the maintenance period" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#WasteProcess
+<https://w3id.org/digitalconstruction/EnergySystems#WasteProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#WasteProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#EndofLife> .
+<https://w3id.org/digitalconstruction/EnergySystems#WasteProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Special process required for the management of disposals" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#Wind
+<https://w3id.org/digitalconstruction/EnergySystems#Wind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#Wind> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Generator> .
+<https://w3id.org/digitalconstruction/EnergySystems#Wind> <http://www.w3.org/2000/01/rdf-schema#comment> "Wind Turbines (small scale)" .
+<https://w3id.org/digitalconstruction/EnergySystems#Wind> <http://www.w3.org/2000/01/rdf-schema#label> "Wind Turbine" .
 # 
 # 
 # 
@@ -459,14 +481,14 @@ _:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 # #################################################################
 # 
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Disposal
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Disposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://w3id.org/digitalconstruction/EnergySystems#Disposal
+<https://w3id.org/digitalconstruction/EnergySystems#Disposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Production
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Production> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://w3id.org/digitalconstruction/EnergySystems#Production
+<https://w3id.org/digitalconstruction/EnergySystems#Production> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Transport
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://w3id.org/digitalconstruction/EnergySystems#Transport
+<https://w3id.org/digitalconstruction/EnergySystems#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # 
 # 
@@ -477,9 +499,9 @@ _:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 # #################################################################
 # 
 # 
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Disposal> <http://www.w3.org/2000/01/rdf-schema#comment> "The disposal  of Energy System" .
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Disposal> <http://www.w3.org/2000/01/rdf-schema#label> "Disposal Phase" .
+<https://w3id.org/digitalconstruction/EnergySystems#Disposal> <http://www.w3.org/2000/01/rdf-schema#comment> "The disposal  of Energy System" .
+<https://w3id.org/digitalconstruction/EnergySystems#Disposal> <http://www.w3.org/2000/01/rdf-schema#label> "Disposal Phase" .
 # 
-<https://github.com/SUITE5-Energy/bim4eeb-ontologies/blob/master/energySystems.ttl#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport of Energy Systems Disposals" .
+<https://w3id.org/digitalconstruction/EnergySystems#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport of Energy Systems Disposals" .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
