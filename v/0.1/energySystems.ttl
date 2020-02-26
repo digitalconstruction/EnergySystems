@@ -1,0 +1,554 @@
+@prefix : <https://w3id.org/digitalconstruction/EnergySystems#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/digitalconstruction/EnergySystems> .
+
+<https://w3id.org/digitalconstruction/EnergySystems> rdf:type owl:Ontology ;
+                                                      owl:imports <https://saref.etsi.org/saref> ;
+                                                      <http://purl.org/dc/elements/1.1/creator> "Kostas Tsatsakis (kostas@suite5.eu)" ,
+                                                                                                "Spiros Kousouris (spiros@suite5.eu)" ;
+                                                      <http://purl.org/dc/terms/abstract> "An ontology for energy services, defined as an extension of SAREF to address lifecycle assessment parameters for the energy systems." ;
+                                                      <http://purl.org/dc/terms/description> "An ontology for energy services, defined as an extension of SAREF to address lifecycle assessment (LCA) parameters for the energy systems, especially needed in renovation projects." ;
+                                                      <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                      <http://purl.org/dc/terms/title> "Digital Construction - EnergySystems" ;
+                                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "dicba" ;
+                                                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/EnergySystems" ;
+                                                      rdfs:comment "The IAQ ontology was created by SUITE5 in the BIM4EEB project (GA 820660), supported through the EU Horizon 2020 Research and Innovation Programme under the topic Building information modelling adapted to efficient renovation (RIA). " ;
+                                                      rdfs:label "Digital Construction - EnergySystems" ;
+                                                      rdfs:seeAlso <https://w3id.org/digitalconstruction> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasCost
+:hasCost rdf:type owl:ObjectProperty ;
+         rdfs:comment "the device/ energy system is associated with an operational cost" ;
+         rdfs:label "has Cost" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics
+:hasEnergyStatistics rdf:type owl:ObjectProperty ;
+                     rdfs:comment "An energy system has some typical energy statistics" ;
+                     rdfs:label "has Energy Statistics" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasLCC
+:hasLCC rdf:type owl:ObjectProperty ;
+        rdfs:comment "relationship between LCA and LCC" ;
+        rdfs:label "has Lifecycle Cost" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasLifeCycleParameters
+:hasLifeCycleParameters rdf:type owl:ObjectProperty ;
+                        rdfs:comment "relationship of a device and its LCA" ;
+                        rdfs:label "has Lifecycle Parameters" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics
+:hasPowerStatistics rdf:type owl:ObjectProperty ;
+                    rdfs:comment "The eneryg system has some power statistics" ;
+                    rdfs:label "has Power Statistics" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasReward
+:hasReward rdf:type owl:ObjectProperty ;
+           rdfs:comment "A service of the energy system is associated with a reward for this service" ;
+           rdfs:label "has Reward" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#refersTo
+:refersTo rdf:type owl:ObjectProperty ;
+          rdfs:comment "A service of an energy system has as a reference an baseline profile" ;
+          rdfs:label "refers To" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasDuration
+:hasDuration rdf:type owl:DatatypeProperty ;
+             rdfs:comment "The total duration of the process" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasEmissions
+:hasEmissions rdf:type owl:DatatypeProperty ;
+              rdfs:comment "The amount of Emissions in LCA analysis" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasEndTime
+:hasEndTime rdf:type owl:DatatypeProperty ;
+            rdfs:comment "The end  time of a process|" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMax
+:hasEnergyMax rdf:type owl:DatatypeProperty ;
+              rdfs:comment "The max value for the energy (daily) profile of an energy system" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMin
+:hasEnergyMin rdf:type owl:DatatypeProperty ;
+              rdfs:comment "The min value for the energy (daily) profile of an energy system" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasEnergyUse
+:hasEnergyUse rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasPowerMax
+:hasPowerMax rdf:type owl:DatatypeProperty ;
+             rdfs:comment "The max value for the power profile of an energy system" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasPowerMin
+:hasPowerMin rdf:type owl:DatatypeProperty ;
+             rdfs:comment "The min value for the power profile of an energy system" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasPowerSTD
+:hasPowerSTD rdf:type owl:DatatypeProperty ;
+             rdfs:comment "Power Standard deviation of a device" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasPowerSkewness
+:hasPowerSkewness rdf:type owl:DatatypeProperty ;
+                  rdfs:comment "Power Skewness of a device power profile" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasStartTime
+:hasStartTime rdf:type owl:DatatypeProperty ;
+              rdfs:comment "The start time of a process|" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#hasValue
+:hasValue rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://saref.etsi.org/saref#Device
+<https://saref.etsi.org/saref#Device> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :hasLifeCycleParameters ;
+                                                        owl:someValuesFrom :LifeCycleAssesment
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :hasCost ;
+                                                        owl:allValuesFrom :LifeCycleCost
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <https://saref.etsi.org/saref#hasDescription> ;
+                                                        owl:someValuesFrom xsd:string
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <https://saref.etsi.org/saref#hasName> ;
+                                                        owl:someValuesFrom xsd:string
+                                                      ] .
+
+
+###  https://saref.etsi.org/saref#EnergyRelated
+<https://saref.etsi.org/saref#EnergyRelated> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasEnergyStatistics ;
+                                                               owl:allValuesFrom :Energy
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasPowerStatistics ;
+                                                               owl:allValuesFrom :Power
+                                                             ] .
+
+
+###  https://saref.etsi.org/saref#Service
+<https://saref.etsi.org/saref#Service> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasReward ;
+                                                         owl:allValuesFrom :Reward
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :refersTo ;
+                                                         owl:allValuesFrom :BaselineProfile
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://saref.etsi.org/saref#hasDescription> ;
+                                                         owl:someValuesFrom xsd:string
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasEndTime ;
+                                                         owl:allValuesFrom xsd:dateTime
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasStartTime ;
+                                                         owl:allValuesFrom xsd:dateTime
+                                                       ] .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel
+:ActuatorLevel rdf:type owl:Class ;
+               rdfs:subClassOf <https://saref.etsi.org/saref#Actuator> ;
+               rdfs:comment "Independent from the ActuatorSwitch class, the ActuatorLevel class enables a user or application to model LEVEL commands (start, up, percentageAbsolute, relative, etc.). This can be used to dim a light, set the speed of an electric motor, etc." ;
+               rdfs:label "Actuator Level" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile
+:BaselineProfile rdf:type owl:Class ;
+                 rdfs:subClassOf <https://saref.etsi.org/saref#Profile> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://saref.etsi.org/saref#hasDescription> ;
+                                   owl:someValuesFrom xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://saref.etsi.org/saref#hasName> ;
+                                   owl:someValuesFrom xsd:string
+                                 ] ;
+                 rdfs:comment "Along wiht the actual profile, the baseline profile of each device should be defined for the participation in energy services" ;
+                 rdfs:label "Baseline Profile" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Batteries
+:Batteries rdf:type owl:Class ;
+           rdfs:subClassOf <https://saref.etsi.org/saref#Storage> ;
+           rdfs:comment "Residential, behind the meter battery system" ;
+           rdfs:label "Battery Storage" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#CHP
+:CHP rdf:type owl:Class ;
+     rdfs:subClassOf <https://saref.etsi.org/saref#Generator> ;
+     rdfs:comment "Small CHPs for local generation" ;
+     rdfs:label "Combined Heat  & Power" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Capital
+:Capital rdf:type owl:Class ;
+         rdfs:subClassOf :LifeCycleCost ;
+         rdfs:comment "The capital cost required for the investment on Energy Systems" ;
+         rdfs:label "Capital Cost" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#ComfortManagement
+:ComfortManagement rdf:type owl:Class ;
+                   rdfs:subClassOf <https://saref.etsi.org/saref#Service> ;
+                   rdfs:comment "An automation service offered to the users on the way to ensure comfort preservation" ;
+                   rdfs:label "Comfort Preservation" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#ConsInstallation
+:ConsInstallation rdf:type owl:Class ;
+                  rdfs:subClassOf :Construction ;
+                  rdfs:comment "Installation of the energy system" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#ConsTransport
+:ConsTransport rdf:type owl:Class ;
+               rdfs:subClassOf :Construction ;
+               rdfs:comment "Transport of Energy System to the destination" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Construction
+:Construction rdf:type owl:Class ;
+              rdfs:subClassOf :LifeCycleAssesment ;
+              rdfs:comment "Construction phase of renovation" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Deconstruction
+:Deconstruction rdf:type owl:Class ;
+                rdfs:subClassOf :EndofLife ;
+                rdfs:comment "The deconstruction of Energy System" ;
+                rdfs:label "Deconstruction process" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#DieselGen
+:DieselGen rdf:type owl:Class ;
+           rdfs:subClassOf <https://saref.etsi.org/saref#Generator> ;
+           rdfs:comment "Small Diesel Generator for back up" ;
+           rdfs:label "Diesel Generator" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Disposal
+:Disposal rdf:type owl:Class ;
+          rdfs:subClassOf :EndofLife .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#EV
+:EV rdf:type owl:Class ;
+    rdfs:subClassOf <https://saref.etsi.org/saref#Storage> ;
+    rdfs:comment "Charging points and the associated EVs" ;
+    rdfs:label "Electric Vehicles" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#EndofLife
+:EndofLife rdf:type owl:Class ;
+           rdfs:subClassOf :LifeCycleAssesment ;
+           rdfs:comment "End of life period for the Energy System" ;
+           rdfs:label "End of Life" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Energy
+:Energy rdf:type owl:Class ;
+        rdfs:subClassOf :Statistics ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasEnergyMax ;
+                          owl:allValuesFrom xsd:float
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasEnergyMin ;
+                          owl:allValuesFrom xsd:float
+                        ] ;
+        rdfs:label "Energy Statistics" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Engineering
+:Engineering rdf:type owl:Class ;
+             rdfs:subClassOf :Operational ;
+             rdfs:comment "Engineering and operation cost for the device" ;
+             rdfs:label "Engineering Cost" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Flexibility
+:Flexibility rdf:type owl:Class ;
+             rdfs:subClassOf <https://saref.etsi.org/saref#Property> ;
+             rdfs:comment "Energy System Flexibility" ;
+             rdfs:label "Flexibility" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#HVAC
+:HVAC rdf:type owl:Class ;
+      rdfs:subClassOf <https://saref.etsi.org/saref#Load> ;
+      rdfs:comment "Heating Cooling and Ventilation systems" ;
+      rdfs:label "HVAC Systems" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment
+:LifeCycleAssesment rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasLCC ;
+                                      owl:allValuesFrom :LifeCycleCost
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://saref.etsi.org/saref#hasDescription> ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://saref.etsi.org/saref#hasName> ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasDuration ;
+                                      owl:allValuesFrom xsd:float
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasEmissions ;
+                                      owl:allValuesFrom rdfs:Literal
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasEnergyUse ;
+                                      owl:allValuesFrom rdfs:Literal
+                                    ] ;
+                    rdfs:comment "Device Lifecycle class to represent the different properties that have to be considered in the model for the project" ;
+                    rdfs:label "Device Lifecycle" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost
+:LifeCycleCost rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://saref.etsi.org/saref#isMeasuredIn> ;
+                                 owl:allValuesFrom <https://saref.etsi.org/saref#Currency>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://saref.etsi.org/saref#hasDescription> ;
+                                 owl:someValuesFrom xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://saref.etsi.org/saref#hasName> ;
+                                 owl:someValuesFrom xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://saref.etsi.org/saref#hasValue> ;
+                                 owl:allValuesFrom xsd:float
+                               ] ;
+               rdfs:comment "Lifecycle Cost Parameters for the Energy Systems" ;
+               rdfs:label "Lifecycle Cost" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Maintenance
+:Maintenance rdf:type owl:Class ;
+             rdfs:subClassOf :Operational ;
+             rdfs:comment "Maintenance Costs for the Energy System" ;
+             rdfs:label "Maintenance Cost" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Manufacturing
+:Manufacturing rdf:type owl:Class ;
+               rdfs:subClassOf :ProductStage ;
+               rdfs:comment "Manufacturing stage for the Energy System" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#MaterialSupply
+:MaterialSupply rdf:type owl:Class ;
+                rdfs:subClassOf :ProductStage ;
+                rdfs:comment "Material Supply for the early stage of r the Energy System" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Operation
+:Operation rdf:type owl:Class ;
+           rdfs:subClassOf :Use ;
+           rdfs:comment "Actual Operation of the energy system" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Operational
+:Operational rdf:type owl:Class ;
+             rdfs:subClassOf :LifeCycleCost ;
+             rdfs:comment "The operational costs for the Energy System" ;
+             rdfs:label "Operational Costs" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#PV
+:PV rdf:type owl:Class ;
+    rdfs:subClassOf <https://saref.etsi.org/saref#Generator> ;
+    rdfs:comment "Small scale Photovoltaics" ;
+    rdfs:label "Rooftop PVs" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Power
+:Power rdf:type owl:Class ;
+       rdfs:subClassOf :Statistics ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPowerMax ;
+                         owl:allValuesFrom xsd:float
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPowerMin ;
+                         owl:allValuesFrom xsd:float
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPowerSTD ;
+                         owl:allValuesFrom xsd:float
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPowerSkewness ;
+                         owl:allValuesFrom xsd:float
+                       ] ;
+       rdfs:label "Power Statistics" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#ProductStage
+:ProductStage rdf:type owl:Class ;
+              rdfs:subClassOf :LifeCycleAssesment ;
+              rdfs:comment "Production phase for the Energy System" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Repair
+:Repair rdf:type owl:Class ;
+        rdfs:subClassOf :Use ;
+        rdfs:comment "LCA analysis during the repair phase" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Replacement
+:Replacement rdf:type owl:Class ;
+             rdfs:subClassOf :Use ;
+             rdfs:comment "LCA analysis during the replacement  phase" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Reward
+:Reward rdf:type owl:Class ;
+        rdfs:subClassOf <https://saref.etsi.org/saref#Property> ;
+        rdfs:comment "This is the reward from participating in innovative Energy Services (like DR)" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#SelfConsumption
+:SelfConsumption rdf:type owl:Class ;
+                 rdfs:subClassOf <https://saref.etsi.org/saref#Service> ;
+                 rdfs:comment "This is the service about self consumption optimization.. Balancing local generation with demand" ;
+                 rdfs:label "Self Consumption Optimization" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#ServiceAggregator
+:ServiceAggregator rdf:type owl:Class ;
+                   rdfs:subClassOf <https://saref.etsi.org/saref#Service> ;
+                   rdfs:comment "This is the load control from 3rd party aggregators to enable participation in DR markets (services to DSOs, anchillary services etc...)" ;
+                   rdfs:label "Service to Aggregator" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Statistics
+:Statistics rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty <https://saref.etsi.org/saref#hasDescription> ;
+                              owl:someValuesFrom xsd:string
+                            ] ;
+            rdfs:comment "Generic energy and power statistics that characterize the daily curve of each eneryg related device" ;
+            rdfs:label "Energy Statistics" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:subClassOf :EndofLife .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Use
+:Use rdf:type owl:Class ;
+     rdfs:subClassOf :LifeCycleAssesment ;
+     rdfs:comment "Operational Phase of the Energy System" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#UseMaintenance
+:UseMaintenance rdf:type owl:Class ;
+                rdfs:subClassOf :Use ;
+                rdfs:comment "LCA analysis during the maintenance period" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#WasteProcess
+:WasteProcess rdf:type owl:Class ;
+              rdfs:subClassOf :EndofLife ;
+              rdfs:comment "Special process required for the management of disposals" .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Wind
+:Wind rdf:type owl:Class ;
+      rdfs:subClassOf <https://saref.etsi.org/saref#Generator> ;
+      rdfs:comment "Wind Turbines (small scale)" ;
+      rdfs:label "Wind Turbine" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Disposal
+:Disposal rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Production
+:Production rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/digitalconstruction/EnergySystems#Transport
+:Transport rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Disposal rdfs:comment "The disposal  of Energy System" ;
+          rdfs:label "Disposal Phase" .
+
+
+:Transport rdfs:comment "Transport of Energy Systems Disposals" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
