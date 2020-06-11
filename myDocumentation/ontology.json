@@ -275,7 +275,17 @@
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#Actuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#Currency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://saref.etsi.org/saref#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid1"
   }, {
@@ -287,13 +297,27 @@
   } ]
 }, {
   "@id" : "https://saref.etsi.org/saref#EnergyRelated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid5"
   }, {
     "@id" : "_:genid6"
   } ]
 }, {
+  "@id" : "https://saref.etsi.org/saref#Generator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#Load",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#Profile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://saref.etsi.org/saref#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid7"
   }, {
@@ -305,6 +329,21 @@
   }, {
     "@id" : "_:genid11"
   } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#Storage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref#isMeasuredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -325,9 +364,6 @@
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Digital Construction - EnergySystems"
   } ],
-  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "dicba"
-  } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@value" : "https://w3id.org/digitalconstruction/EnergySystems"
   } ],
@@ -335,13 +371,15 @@
     "@value" : "The IAQ ontology was created by SUITE5 in the BIM4EEB project (GA 820660), supported through the EU Horizon 2020 Research and Innovation Programme under the topic Building information modelling adapted to efficient renovation (RIA). "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Digital Construction - EnergySystems"
+    "@value" : "Digital Construction Energy Systems"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://w3id.org/digitalconstruction"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "https://saref.etsi.org/saref"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/Processes"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel",
@@ -354,6 +392,78 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/saref#Actuator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#AnnualCoolingEnergyConsumptionPerArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual cooling energy consumption of a building, in kWh/m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AnnualCoolingEnergyConsumptionPerArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#AnnualElectricityConsumptionPerArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual electricity consumption of a building, in kWh/m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AnnualElectricityConsumptionPerArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#AnnualHeatingEnergyConsumptionPerArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual heating energy consumption of a building, in kWh/m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AnnualHeatingEnergyConsumptionPerArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#AnnualOperationalCostPerArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual operational energy costs in €/floor-m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AnnualOperationalCostPerArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#AnnualPrimaryEnergyConsumptionPerArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual primary energy consumption of a building, in kWh/m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AnnualPrimaryEnergyConsumptionPerArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#AnnualThermalDiscomfortHours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of hours that the temperature of the bearer is above 27 degrees celsius"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AnnualThermalDiscomfortHours"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#OccupancyComfortQuality"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile",
@@ -520,6 +630,15 @@
     "@id" : "_:genid15"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EnergyConsumptionQuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Engineering",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -554,6 +673,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/saref#Load"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#InvestmentCostPerArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The investment in €/floor-m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "InvestmentCostPerArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment",
@@ -626,6 +757,15 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ProductStage"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#OccupancyComfortQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OccupancyComfortQuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Operation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -687,6 +827,60 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Production",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenewableEnergySupplyShare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The percentage of energy consumption that comes from renewable energy sources"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RenewableEnergySupplyShare"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RenovationCostQuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationPaybackTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The number of years it takes to pay back the costs of renovation, that is, the time the savings equal to the investment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RenovationPaybackTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Scenario - a description and analysis of a potential future of an entity - where that entity is a Location (a building or a building zone) that is subject to a set of RenovationMeasures (activities to dismantel, modify, or replace existing structure or to install additional structures), and the characteristics of implied by the application of those Measures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RenovationScenario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Information#Scenario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RenovationScenarioQuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Repair",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -799,6 +993,24 @@
     "@id" : "https://saref.etsi.org/saref#Generator"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#annualHoursOfThermalDiscomfort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Thermal discomfort, measured as a number of hours when the temperature is above 27 degrees celsius"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "annualHoursOfThermalDiscomfort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprComfortCriterion"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasCost",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -901,6 +1113,18 @@
     "@value" : "has Power Statistics"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasRenovationMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRenovationMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasReward",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -908,6 +1132,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has Reward"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasScenarioQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasScenarioQuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasStartTime",
@@ -919,6 +1155,147 @@
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#normalizedCoolingEnergyConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual cooling energy consumption of a building, in kWh/m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "normalizedCoolingEnergyConsumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#normalizedElectricityConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual electricity consumption of a building, in kWh/m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "normalizedElectricityConsumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#normalizedHeatingEnergyConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual heating energy consumption of a building, in kWh/m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "normalizedHeatingEnergyConsumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#normalizedInvestmentCosts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Investment costs of a renovation project as $/floor-m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Processes#RenovationProject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "normalizedInvestmentCost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#normalizedOperationalEnergyCosts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual operational energy cost of a building in €/floor-m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "normalizedOperationalEnergyCosts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#normalizedPrimaryEnergyConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Annual primary energy consumption of a building, in kWhpr/m2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "normalizedPrimaryEnergyConsumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprComfortCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "oprComfortCriterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "oprCostCriterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "oprEnergyCriterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ownersProjectRequirementCriterion"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#refersTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -926,5 +1303,41 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "refers To"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#renewableEnergySupplyShare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The share of renewable energy supply, in percentages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "renewableEnergySupplyShare"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#renovationPaybackTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Payback time of a RenovationProject, in years"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Processes#RenovationProject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "renovationPaybackTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion"
   } ]
 } ]

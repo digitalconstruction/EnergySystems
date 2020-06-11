@@ -1,15 +1,15 @@
 <https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2002/07/owl#imports> <https://saref.etsi.org/saref> .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Processes> .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/elements/1.1/creator> "Kostas Tsatsakis (kostas@suite5.eu)" .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/elements/1.1/creator> "Spiros Kousouris (spiros@suite5.eu)" .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/terms/abstract> "An ontology for energy services, defined as an extension of SAREF to address lifecycle assessment parameters for the energy systems." .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/terms/description> "An ontology for energy services, defined as an extension of SAREF to address lifecycle assessment (LCA) parameters for the energy systems, especially needed in renovation projects." .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/dc/terms/title> "Digital Construction - EnergySystems" .
-<https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dicba" .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/EnergySystems" .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2000/01/rdf-schema#comment> "The IAQ ontology was created by SUITE5 in the BIM4EEB project (GA 820660), supported through the EU Horizon 2020 Research and Innovation Programme under the topic Building information modelling adapted to efficient renovation (RIA). " .
-<https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction - EnergySystems" .
+<https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction Energy Systems" .
 <https://w3id.org/digitalconstruction/EnergySystems> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
 # 
 # 
@@ -26,6 +26,9 @@
 # http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -34,6 +37,9 @@
 # #
 # #################################################################
 # 
+# 
+# https://saref.etsi.org/saref#isMeasuredIn
+<https://saref.etsi.org/saref#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/digitalconstruction/EnergySystems#hasCost
 <https://w3id.org/digitalconstruction/EnergySystems#hasCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -60,10 +66,22 @@
 <https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "The eneryg system has some power statistics" .
 <https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics> <http://www.w3.org/2000/01/rdf-schema#label> "has Power Statistics" .
 # 
+# https://w3id.org/digitalconstruction/EnergySystems#hasRenovationMeasure
+<https://w3id.org/digitalconstruction/EnergySystems#hasRenovationMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasRenovationMeasure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasRenovationMeasure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasRenovationMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "hasRenovationMeasure" .
+# 
 # https://w3id.org/digitalconstruction/EnergySystems#hasReward
 <https://w3id.org/digitalconstruction/EnergySystems#hasReward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/EnergySystems#hasReward> <http://www.w3.org/2000/01/rdf-schema#comment> "A service of the energy system is associated with a reward for this service" .
 <https://w3id.org/digitalconstruction/EnergySystems#hasReward> <http://www.w3.org/2000/01/rdf-schema#label> "has Reward" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#hasScenarioQuality
+<https://w3id.org/digitalconstruction/EnergySystems#hasScenarioQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasScenarioQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasScenarioQuality> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#hasScenarioQuality> <http://www.w3.org/2000/01/rdf-schema#label> "hasScenarioQuality" .
 # 
 # https://w3id.org/digitalconstruction/EnergySystems#refersTo
 <https://w3id.org/digitalconstruction/EnergySystems#refersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -78,6 +96,23 @@
 # #
 # #################################################################
 # 
+# 
+# https://saref.etsi.org/saref#hasDescription
+<https://saref.etsi.org/saref#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://saref.etsi.org/saref#hasName
+<https://saref.etsi.org/saref#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://saref.etsi.org/saref#hasValue
+<https://saref.etsi.org/saref#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#annualHoursOfThermalDiscomfort
+<https://w3id.org/digitalconstruction/EnergySystems#annualHoursOfThermalDiscomfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#annualHoursOfThermalDiscomfort> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#oprComfortCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#annualHoursOfThermalDiscomfort> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/EnergySystems#annualHoursOfThermalDiscomfort> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/digitalconstruction/EnergySystems#annualHoursOfThermalDiscomfort> <http://www.w3.org/2000/01/rdf-schema#comment> "Thermal discomfort, measured as a number of hours when the temperature is above 27 degrees celsius" .
+<https://w3id.org/digitalconstruction/EnergySystems#annualHoursOfThermalDiscomfort> <http://www.w3.org/2000/01/rdf-schema#label> "annualHoursOfThermalDiscomfort" .
 # 
 # https://w3id.org/digitalconstruction/EnergySystems#hasDuration
 <https://w3id.org/digitalconstruction/EnergySystems#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -125,6 +160,89 @@
 # https://w3id.org/digitalconstruction/EnergySystems#hasValue
 <https://w3id.org/digitalconstruction/EnergySystems#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
+# https://w3id.org/digitalconstruction/EnergySystems#normalizedCoolingEnergyConsumption
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedCoolingEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedCoolingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedCoolingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedCoolingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedCoolingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual cooling energy consumption of a building, in kWh/m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedCoolingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "normalizedCoolingEnergyConsumption" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#normalizedElectricityConsumption
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedElectricityConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedElectricityConsumption> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedElectricityConsumption> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedElectricityConsumption> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedElectricityConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual electricity consumption of a building, in kWh/m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedElectricityConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "normalizedElectricityConsumption" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#normalizedHeatingEnergyConsumption
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedHeatingEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedHeatingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedHeatingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedHeatingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedHeatingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual heating energy consumption of a building, in kWh/m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedHeatingEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "normalizedHeatingEnergyConsumption" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#normalizedInvestmentCosts
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedInvestmentCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedInvestmentCosts> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedInvestmentCosts> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#RenovationProject> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedInvestmentCosts> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedInvestmentCosts> <http://www.w3.org/2000/01/rdf-schema#comment> "Investment costs of a renovation project as $/floor-m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedInvestmentCosts> <http://www.w3.org/2000/01/rdf-schema#label> "normalizedInvestmentCost" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#normalizedOperationalEnergyCosts
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedOperationalEnergyCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedOperationalEnergyCosts> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedOperationalEnergyCosts> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedOperationalEnergyCosts> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedOperationalEnergyCosts> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual operational energy cost of a building in €/floor-m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedOperationalEnergyCosts> <http://www.w3.org/2000/01/rdf-schema#label> "normalizedOperationalEnergyCosts" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#normalizedPrimaryEnergyConsumption
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedPrimaryEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedPrimaryEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedPrimaryEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedPrimaryEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedPrimaryEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual primary energy consumption of a building, in kWhpr/m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#normalizedPrimaryEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "normalizedPrimaryEnergyConsumption" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#oprComfortCriterion
+<https://w3id.org/digitalconstruction/EnergySystems#oprComfortCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#oprComfortCriterion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#oprComfortCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "oprComfortCriterion" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion
+<https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "oprCostCriterion" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion
+<https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "oprEnergyCriterion" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion
+<https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#ownersProjectRequirementCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "ownersProjectRequirementCriterion" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#renewableEnergySupplyShare
+<https://w3id.org/digitalconstruction/EnergySystems#renewableEnergySupplyShare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#renewableEnergySupplyShare> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#renewableEnergySupplyShare> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Location> .
+<https://w3id.org/digitalconstruction/EnergySystems#renewableEnergySupplyShare> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/EnergySystems#renewableEnergySupplyShare> <http://www.w3.org/2000/01/rdf-schema#comment> "The share of renewable energy supply, in percentages" .
+<https://w3id.org/digitalconstruction/EnergySystems#renewableEnergySupplyShare> <http://www.w3.org/2000/01/rdf-schema#label> "renewableEnergySupplyShare" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#renovationPaybackTime
+<https://w3id.org/digitalconstruction/EnergySystems#renovationPaybackTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/EnergySystems#renovationPaybackTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion> .
+<https://w3id.org/digitalconstruction/EnergySystems#renovationPaybackTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Processes#RenovationProject> .
+<https://w3id.org/digitalconstruction/EnergySystems#renovationPaybackTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/digitalconstruction/EnergySystems#renovationPaybackTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Payback time of a RenovationProject, in years" .
+<https://w3id.org/digitalconstruction/EnergySystems#renovationPaybackTime> <http://www.w3.org/2000/01/rdf-schema#label> "renovationPaybackTime" .
+# 
 # 
 # 
 # #################################################################
@@ -134,7 +252,14 @@
 # #################################################################
 # 
 # 
+# https://saref.etsi.org/saref#Actuator
+<https://saref.etsi.org/saref#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/saref#Currency
+<https://saref.etsi.org/saref#Currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://saref.etsi.org/saref#Device
+<https://saref.etsi.org/saref#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasLifeCycleParameters> .
@@ -153,6 +278,7 @@ _:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/sare
 _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://saref.etsi.org/saref#EnergyRelated
+<https://saref.etsi.org/saref#EnergyRelated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref#EnergyRelated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics> .
@@ -162,7 +288,20 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics> .
 _:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/digitalconstruction/EnergySystems#Power> .
 # 
+# https://saref.etsi.org/saref#Generator
+<https://saref.etsi.org/saref#Generator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/saref#Load
+<https://saref.etsi.org/saref#Load> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/saref#Profile
+<https://saref.etsi.org/saref#Profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/saref#Property
+<https://saref.etsi.org/saref#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://saref.etsi.org/saref#Service
+<https://saref.etsi.org/saref#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasReward> .
@@ -184,11 +323,50 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalconstruction/EnergySystems#hasStartTime> .
 _:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
+# https://saref.etsi.org/saref#Storage
+<https://saref.etsi.org/saref#Storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel
 <https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Actuator> .
 <https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Independent from the ActuatorSwitch class, the ActuatorLevel class enables a user or application to model LEVEL commands (start, up, percentageAbsolute, relative, etc.). This can be used to dim a light, set the speed of an electric motor, etc." .
 <https://w3id.org/digitalconstruction/EnergySystems#ActuatorLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator Level" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#AnnualCoolingEnergyConsumptionPerArea
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualCoolingEnergyConsumptionPerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualCoolingEnergyConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualCoolingEnergyConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual cooling energy consumption of a building, in kWh/m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualCoolingEnergyConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#label> "AnnualCoolingEnergyConsumptionPerArea" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#AnnualElectricityConsumptionPerArea
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualElectricityConsumptionPerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualElectricityConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualElectricityConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual electricity consumption of a building, in kWh/m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualElectricityConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#label> "AnnualElectricityConsumptionPerArea" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#AnnualHeatingEnergyConsumptionPerArea
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualHeatingEnergyConsumptionPerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualHeatingEnergyConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualHeatingEnergyConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual heating energy consumption of a building, in kWh/m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualHeatingEnergyConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#label> "AnnualHeatingEnergyConsumptionPerArea" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#AnnualOperationalCostPerArea
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualOperationalCostPerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualOperationalCostPerArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualOperationalCostPerArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual operational energy costs in €/floor-m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualOperationalCostPerArea> <http://www.w3.org/2000/01/rdf-schema#label> "AnnualOperationalCostPerArea" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#AnnualPrimaryEnergyConsumptionPerArea
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualPrimaryEnergyConsumptionPerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualPrimaryEnergyConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualPrimaryEnergyConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Annual primary energy consumption of a building, in kWh/m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualPrimaryEnergyConsumptionPerArea> <http://www.w3.org/2000/01/rdf-schema#label> "AnnualPrimaryEnergyConsumptionPerArea" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#AnnualThermalDiscomfortHours
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualThermalDiscomfortHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualThermalDiscomfortHours> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#OccupancyComfortQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualThermalDiscomfortHours> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of hours that the temperature of the bearer is above 27 degrees celsius" .
+<https://w3id.org/digitalconstruction/EnergySystems#AnnualThermalDiscomfortHours> <http://www.w3.org/2000/01/rdf-schema#label> "AnnualThermalDiscomfortHours" .
 # 
 # https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile
 <https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -284,6 +462,11 @@ _:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/digitalco
 _:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
 <https://w3id.org/digitalconstruction/EnergySystems#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Statistics" .
 # 
+# https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality
+<https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality> <http://www.w3.org/2000/01/rdf-schema#label> "EnergyConsumptionQuality" .
+# 
 # https://w3id.org/digitalconstruction/EnergySystems#Engineering
 <https://w3id.org/digitalconstruction/EnergySystems#Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/EnergySystems#Engineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Operational> .
@@ -301,6 +484,12 @@ _:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://w3id.org/digitalconstruction/EnergySystems#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref#Load> .
 <https://w3id.org/digitalconstruction/EnergySystems#HVAC> <http://www.w3.org/2000/01/rdf-schema#comment> "Heating Cooling and Ventilation systems" .
 <https://w3id.org/digitalconstruction/EnergySystems#HVAC> <http://www.w3.org/2000/01/rdf-schema#label> "HVAC Systems" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#InvestmentCostPerArea
+<https://w3id.org/digitalconstruction/EnergySystems#InvestmentCostPerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#InvestmentCostPerArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#InvestmentCostPerArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The investment in €/floor-m2" .
+<https://w3id.org/digitalconstruction/EnergySystems#InvestmentCostPerArea> <http://www.w3.org/2000/01/rdf-schema#label> "InvestmentCostPerArea" .
 # 
 # https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment
 <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -368,6 +557,11 @@ _:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://w3id.org/digitalconstruction/EnergySystems#MaterialSupply> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#ProductStage> .
 <https://w3id.org/digitalconstruction/EnergySystems#MaterialSupply> <http://www.w3.org/2000/01/rdf-schema#comment> "Material Supply for the early stage of r the Energy System" .
 # 
+# https://w3id.org/digitalconstruction/EnergySystems#OccupancyComfortQuality
+<https://w3id.org/digitalconstruction/EnergySystems#OccupancyComfortQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#OccupancyComfortQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#OccupancyComfortQuality> <http://www.w3.org/2000/01/rdf-schema#label> "OccupancyComfortQuality" .
+# 
 # https://w3id.org/digitalconstruction/EnergySystems#Operation
 <https://w3id.org/digitalconstruction/EnergySystems#Operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/EnergySystems#Operation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#Use> .
@@ -410,6 +604,34 @@ _:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 <https://w3id.org/digitalconstruction/EnergySystems#ProductStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/EnergySystems#ProductStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment> .
 <https://w3id.org/digitalconstruction/EnergySystems#ProductStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Production phase for the Energy System" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#RenewableEnergySupplyShare
+<https://w3id.org/digitalconstruction/EnergySystems#RenewableEnergySupplyShare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenewableEnergySupplyShare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenewableEnergySupplyShare> <http://www.w3.org/2000/01/rdf-schema#comment> "The percentage of energy consumption that comes from renewable energy sources" .
+<https://w3id.org/digitalconstruction/EnergySystems#RenewableEnergySupplyShare> <http://www.w3.org/2000/01/rdf-schema#label> "RenewableEnergySupplyShare" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality> <http://www.w3.org/2000/01/rdf-schema#label> "RenovationCostQuality" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#RenovationPaybackTime
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationPaybackTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationPaybackTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationPaybackTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of years it takes to pay back the costs of renovation, that is, the time the savings equal to the investment" .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationPaybackTime> <http://www.w3.org/2000/01/rdf-schema#label> "RenovationPaybackTime" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#Scenario> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario> <http://www.w3.org/2000/01/rdf-schema#comment> "A Scenario - a description and analysis of a potential future of an entity - where that entity is a Location (a building or a building zone) that is subject to a set of RenovationMeasures (activities to dismantel, modify, or replace existing structure or to install additional structures), and the characteristics of implied by the application of those Measures." .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationScenario> <http://www.w3.org/2000/01/rdf-schema#label> "RenovationScenario" .
+# 
+# https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://w3id.org/digitalconstruction/EnergySystems#RenovationScenarioQuality> <http://www.w3.org/2000/01/rdf-schema#label> "RenovationScenarioQuality" .
 # 
 # https://w3id.org/digitalconstruction/EnergySystems#Repair
 <https://w3id.org/digitalconstruction/EnergySystems#Repair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
