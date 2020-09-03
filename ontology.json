@@ -2,49 +2,40 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasLifeCycleParameters"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Energy"
   } ]
 }, {
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEndTime"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Power"
   } ]
 }, {
   "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasStartTime"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasReward"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Reward"
   } ]
 }, {
   "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasDescription"
+    "@id" : "https://saref.etsi.org/core#hasName"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasName"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -53,7 +44,7 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMax"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -62,7 +53,7 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEnergyMin"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost"
@@ -71,25 +62,16 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasLCC"
   } ]
 }, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core#hasName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasDescription"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasName"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -98,16 +80,7 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasDuration"
   } ]
 }, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasCost"
-  } ]
-}, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -116,7 +89,7 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEmissions"
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -125,43 +98,34 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEnergyUse"
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://saref.etsi.org/saref#Currency"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#isMeasuredIn"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Power"
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasDescription"
+    "@id" : "https://saref.etsi.org/core#hasName"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasName"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasValue"
+    "@id" : "https://saref.etsi.org/core#hasValue"
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -170,7 +134,7 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasPowerMax"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -179,7 +143,7 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasPowerMin"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -188,7 +152,7 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasPowerSTD"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -200,126 +164,123 @@
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasDescription"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasDescription"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Energy"
   } ]
 }, {
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasName"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Power"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasLCC"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasLifeCycleParameters"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Energy"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Power"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasPowerStatistics"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Reward"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasReward"
-  } ]
-}, {
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#BaselineProfile"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#refersTo"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEnergyStatistics"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Energy"
   } ]
 }, {
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref#hasDescription"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasFlexibility"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Flexibility"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/abstract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#Actuator",
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000034",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://saref.etsi.org/saref#Currency",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#Device",
+  "@id" : "https://saref.etsi.org/core#Generator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  }, {
     "@id" : "_:genid1"
   }, {
     "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core#Load",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
   }, {
     "@id" : "_:genid3"
   }, {
     "@id" : "_:genid4"
   } ]
 }, {
-  "@id" : "https://saref.etsi.org/saref#EnergyRelated",
+  "@id" : "https://saref.etsi.org/core#Storage",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#isMeasuredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Device",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000030"
+  }, {
     "@id" : "_:genid5"
   }, {
     "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
   } ]
 }, {
-  "@id" : "https://saref.etsi.org/saref#Generator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#Load",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#Profile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#Property",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#Service",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "https://saref.etsi.org/core/Function",
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid7"
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000034"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Service",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000034"
   }, {
     "@id" : "_:genid8"
   }, {
@@ -329,21 +290,6 @@
   }, {
     "@id" : "_:genid11"
   } ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#Storage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#hasDescription",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#hasName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#hasValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "https://saref.etsi.org/saref#isMeasuredIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -361,14 +307,17 @@
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "SUITE5"
+  } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Digital Construction - EnergySystems"
   } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "dices:"
+  } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@value" : "https://w3id.org/digitalconstruction/EnergySystems"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The IAQ ontology was created by SUITE5 in the BIM4EEB project (GA 820660), supported through the EU Horizon 2020 Research and Innovation Programme under the topic Building information modelling adapted to efficient renovation (RIA). "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Digital Construction Energy Systems"
@@ -377,7 +326,7 @@
     "@id" : "https://w3id.org/digitalconstruction"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://saref.etsi.org/saref"
+    "@id" : "https://saref.etsi.org/core/v3.1.1/"
   }, {
     "@id" : "https://w3id.org/digitalconstruction/Processes"
   } ]
@@ -391,7 +340,7 @@
     "@value" : "Actuator Level"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Actuator"
+    "@id" : "https://saref.etsi.org/core/Actuator"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#AnnualCoolingEnergyConsumptionPerArea",
@@ -475,11 +424,9 @@
     "@value" : "Baseline Profile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Profile"
+    "@id" : "https://saref.etsi.org/core/Profile"
   }, {
     "@id" : "_:genid12"
-  }, {
-    "@id" : "_:genid13"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Batteries",
@@ -491,7 +438,7 @@
     "@value" : "Battery Storage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Storage"
+    "@id" : "https://saref.etsi.org/core#Storage"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#CHP",
@@ -503,7 +450,7 @@
     "@value" : "Combined Heat  & Power"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Generator"
+    "@id" : "https://saref.etsi.org/core#Generator"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Capital",
@@ -512,7 +459,7 @@
     "@value" : "The capital cost required for the investment on Energy Systems"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Capital Cost"
+    "@value" : "CapitalCost"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost"
@@ -527,13 +474,16 @@
     "@value" : "Comfort Preservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Service"
+    "@id" : "https://saref.etsi.org/core/Service"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ConsInstallation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Installation of the energy system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceInstallation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Construction"
@@ -544,6 +494,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Transport of Energy System to the destination"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceTransportation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Construction"
   } ]
@@ -552,6 +505,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Construction phase of renovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceConstruction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment"
@@ -563,7 +519,7 @@
     "@value" : "The deconstruction of Energy System"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Deconstruction process"
+    "@value" : "DeviceDeconstruction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EndofLife"
@@ -578,7 +534,7 @@
     "@value" : "Diesel Generator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Generator"
+    "@id" : "https://saref.etsi.org/core#Generator"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Disposal",
@@ -587,7 +543,7 @@
     "@value" : "The disposal  of Energy System"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Disposal Phase"
+    "@value" : "DeviceDisposal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EndofLife"
@@ -602,7 +558,7 @@
     "@value" : "Electric Vehicles"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Storage"
+    "@id" : "https://saref.etsi.org/core#Storage"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EndofLife",
@@ -611,7 +567,7 @@
     "@value" : "End of life period for the Energy System"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "End of Life"
+    "@value" : "DeviceEndOfLife"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment"
@@ -620,14 +576,14 @@
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Energy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Energy Statistics"
+    "@value" : "EnergyConsumptionStatistics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Statistics"
   }, {
-    "@id" : "_:genid14"
+    "@id" : "_:genid13"
   }, {
-    "@id" : "_:genid15"
+    "@id" : "_:genid14"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EnergyConsumptionQuality",
@@ -645,7 +601,7 @@
     "@value" : "Engineering and operation cost for the device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Engineering Cost"
+    "@value" : "EngineeringCost"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Operational"
@@ -660,31 +616,7 @@
     "@value" : "Flexibility"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Property"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#HVAC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Heating Cooling and Ventilation systems"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "HVAC Systems"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Load"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#InvestmentCostPerArea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The investment in €/floor-m2"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "InvestmentCostPerArea"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#RenovationCostQuality"
+    "@id" : "https://saref.etsi.org/core/Property"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment",
@@ -693,9 +625,13 @@
     "@value" : "Device Lifecycle class to represent the different properties that have to be considered in the model for the project"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Device Lifecycle"
+    "@value" : "DeviceLifecyclePhase"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  }, {
+    "@id" : "_:genid15"
+  }, {
     "@id" : "_:genid16"
   }, {
     "@id" : "_:genid17"
@@ -703,10 +639,6 @@
     "@id" : "_:genid18"
   }, {
     "@id" : "_:genid19"
-  }, {
-    "@id" : "_:genid20"
-  }, {
-    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost",
@@ -715,16 +647,14 @@
     "@value" : "Lifecycle Cost Parameters for the Energy Systems"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Lifecycle Cost"
+    "@value" : "LifecycleCost"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid22"
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
   }, {
-    "@id" : "_:genid23"
+    "@id" : "_:genid20"
   }, {
-    "@id" : "_:genid24"
-  }, {
-    "@id" : "_:genid25"
+    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Maintenance",
@@ -733,7 +663,7 @@
     "@value" : "Maintenance Costs for the Energy System"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Maintenance Cost"
+    "@value" : "MaintenanceCost"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Operational"
@@ -744,6 +674,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Manufacturing stage for the Energy System"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceManufacturing"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ProductStage"
   } ]
@@ -752,6 +685,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Material Supply for the early stage of r the Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceMaterialSupply"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ProductStage"
@@ -771,6 +707,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Actual Operation of the energy system"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceOperation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Use"
   } ]
@@ -781,7 +720,7 @@
     "@value" : "The operational costs for the Energy System"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Operational Costs"
+    "@value" : "OperationalCost"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleCost"
@@ -796,30 +735,33 @@
     "@value" : "Rooftop PVs"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Generator"
+    "@id" : "https://saref.etsi.org/core#Generator"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Power",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Power Statistics"
+    "@value" : "PowerStatistics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Statistics"
   }, {
-    "@id" : "_:genid26"
+    "@id" : "_:genid22"
   }, {
-    "@id" : "_:genid27"
+    "@id" : "_:genid23"
   }, {
-    "@id" : "_:genid28"
+    "@id" : "_:genid24"
   }, {
-    "@id" : "_:genid29"
+    "@id" : "_:genid25"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ProductStage",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Production phase for the Energy System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceProduction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment"
@@ -887,6 +829,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "LCA analysis during the repair phase"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceRepair"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Use"
   } ]
@@ -895,6 +840,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "LCA analysis during the replacement  phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceReplacement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Use"
@@ -906,7 +854,7 @@
     "@value" : "This is the reward from participating in innovative Energy Services (like DR)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Property"
+    "@id" : "https://saref.etsi.org/core/Property"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#SelfConsumption",
@@ -918,7 +866,7 @@
     "@value" : "Self Consumption Optimization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Service"
+    "@id" : "https://saref.etsi.org/core/Service"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#ServiceAggregator",
@@ -930,7 +878,7 @@
     "@value" : "Service to Aggregator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Service"
+    "@id" : "https://saref.etsi.org/core/Service"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Statistics",
@@ -939,16 +887,19 @@
     "@value" : "Generic energy and power statistics that characterize the daily curve of each eneryg related device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Energy Statistics"
+    "@value" : "EnergyStatistics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid30"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Transport",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Transport of Energy Systems Disposals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceRelocation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EndofLife"
@@ -959,6 +910,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Operational Phase of the Energy System"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceUse"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#LifeCycleAssesment"
   } ]
@@ -968,6 +922,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "LCA analysis during the maintenance period"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DeviceMaintenance"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#Use"
   } ]
@@ -976,6 +933,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Special process required for the management of disposals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WasteDisposal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#EndofLife"
@@ -990,7 +950,7 @@
     "@value" : "Wind Turbine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://saref.etsi.org/saref#Generator"
+    "@id" : "https://saref.etsi.org/core#Generator"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#annualHoursOfThermalDiscomfort",
@@ -1011,14 +971,8 @@
     "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprComfortCriterion"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasCost",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "the device/ energy system is associated with an operational cost"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Cost"
-  } ]
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasDuration",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -1061,6 +1015,15 @@
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasEnergyUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasFlexibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the flexibility value associated with a specific service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has flexibility"
+  } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/EnergySystems#hasLCC",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1294,50 +1257,5 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ownersProjectRequirementCriterion"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#refersTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A service of an energy system has as a reference an baseline profile"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "refers To"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#renewableEnergySupplyShare",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The share of renewable energy supply, in percentages"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "renewableEnergySupplyShare"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprEnergyCriterion"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/EnergySystems#renovationPaybackTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Payback time of a RenovationProject, in years"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Processes#RenovationProject"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "renovationPaybackTime"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/EnergySystems#oprCostCriterion"
   } ]
 } ]
